@@ -15,13 +15,27 @@ body {
   font: normal 1.6rem/1.5 "Roboto", sans-serif;
 }
 
+/* PRESETS */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.marging-bottom {
+  margin-bottom: 1em;
+}
+
 /* Header */
 
 header {
   background: coral;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.63);
   font-weight: 900;
   padding: 1em 0;
+  border-bottom: 3px solid rgba(153, 153, 153, 0.699);
 }
 
 .banner-logo,
@@ -32,7 +46,7 @@ header {
 }
 .banner-logo {
   border: 4px solid #fff;
-  border-radius: 30px;
+  border-radius: 3rem;
   margin-bottom: 0.5em;
   padding: 0 0.5em;
 }
@@ -52,6 +66,7 @@ header {
 
 nav {
   background-color: rgb(231, 228, 228);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -61,12 +76,42 @@ nav ul {
   list-style: none;
 }
 nav ul li {
-  /* display: inline-block; */
   padding: 0.2em 0;
   text-align: center;
 }
 
-/* Link states */
+/* MAIN */
+
+.section-main {
+  padding: 1em;
+}
+
+.title {
+  color: tomato;
+  font-weight: 700;
+  text-align: center;
+  padding: 1em;
+}
+
+/* IMAGES */
+
+.img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.gorillas-img {
+  max-height: 20rem;
+  margin: 0.5em;
+}
+
+.events-img {
+  max-height: 30rem;
+}
+
+/* LINK STATES */
 
 a:link,
 a:visited {
@@ -81,7 +126,7 @@ a:active {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 481px) {
+@media (min-width: 30.0626em) {
   nav ul {
     width: fit-content;
     margin: 0 auto;
