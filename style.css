@@ -42,6 +42,7 @@ header {
 .banner-txt {
   width: fit-content;
   margin: 0 auto;
+  text-align: center;
   font-size: 3rem;
 }
 .banner-logo {
@@ -93,18 +94,19 @@ nav ul li {
   padding: 1em;
 }
 
+
+
 /* SECTION CONTAINER */
 
 .section-container {
-  flex-direction: row;
   text-align: center;
-  padding: 1em;
-  background-color: #333;
+  padding: 0.1em;
+  background-color: rgba(51, 51, 51, 0.719);
   color: #fff;
+  font-size: 2rem;
 }
 
 .events-box {
-  margin: 0 1.5em;
   margin: 2em 1em;
 }
 
@@ -119,7 +121,7 @@ nav ul li {
   padding: 2em;
   font-weight: 300;
   color: #fff;
-  background-color: #999;
+  background-color: #ccc;
 }
 /* IMAGES */
 
@@ -164,10 +166,21 @@ a:active {
     display: inline-block;
     padding: 0 0.5em;
   }
+  .gorillas-flex {
+    flex-direction: row;
+  }
+  .img-box {
+    margin: 0 1em;
+  }
 }
 
 /* min 768px */
 @media (min-width: 48em) {
+  .section-flex {
+    flex-direction: row;
+  }
+  nav ul li {
+  padding: 0 1.5em;
 }
 
 /* min 928px */
