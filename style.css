@@ -38,6 +38,15 @@ header {
   border-bottom: 3px solid rgba(153, 153, 153, 0.699);
 }
 
+.logo {
+  background-image: url(/design/Instinct-movie-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+}
+
 .banner-logo,
 .banner-txt {
   width: fit-content;
@@ -46,7 +55,7 @@ header {
   font-size: 3rem;
 }
 .banner-logo {
-  border: 4px solid #fff;
+  border: 4px solid rgba(255, 255, 255, 0.63);
   border-radius: 3rem;
   margin-bottom: 0.5em;
   padding: 0 0.5em;
@@ -79,6 +88,8 @@ nav ul {
 nav ul li {
   padding: 0.2em 0;
   text-align: center;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 /* SECTION MAIN */
@@ -94,8 +105,6 @@ nav ul li {
   padding: 1em;
 }
 
-
-
 /* SECTION CONTAINER */
 
 .section-container {
@@ -108,10 +117,6 @@ nav ul li {
 
 .events-box {
   margin: 2em 1em;
-}
-
-.events-img {
-  margin: 2em;
 }
 
 /* FOOTER */
@@ -138,7 +143,8 @@ nav ul li {
 }
 
 .events-img {
-  max-height: 30rem;
+  margin: 2em;
+  max-width: 350px;
 }
 
 /* LINK STATES */
@@ -157,14 +163,11 @@ a:active {
 /* MEDIA QUERIES - MOBILE FIRST*/
 
 /* min 480px */
+
 @media (min-width: 30em) {
   nav ul {
     width: fit-content;
     margin: 0 auto;
-  }
-  nav ul li {
-    display: inline-block;
-    padding: 0 0.5em;
   }
   .gorillas-flex {
     flex-direction: row;
@@ -174,23 +177,99 @@ a:active {
   }
 }
 
+/* min 640px */
+
+@media (min-width: 40em) {
+  nav ul li {
+    display: inline-block;
+    padding: 0 0.5em;
+    text-decoration: none;
+  }
+}
+
 /* min 768px */
+
 @media (min-width: 48em) {
+  .logo {
+    width: 250px;
+    height: 125px;
+  }
   .section-flex {
     flex-direction: row;
   }
   nav ul li {
-  padding: 0 1.5em;
+    padding: 0 1.5em;
+  }
 }
 
 /* min 928px */
+
 @media (min-width: 58em) {
+  .banner-logo {
+    font-size: 4rem;
+    border: 6px solid rgba(255, 255, 255, 0.63);
+  }
+
+  nav ul li {
+    padding: 0 3em;
+  }
+  .section-main {
+    padding: 0 5em;
+  }
+  .img-box {
+    margin: 0 4em;
+  }
 }
 
 /* min 1024px */
+
 @media (min-width: 64em) {
+  .logo {
+    width: 300px;
+    height: 135px;
+  }
+  .banner-img {
+    height: 40vh;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
 }
 
 /* min 1280px */
+
 @media (min-width: 80em) {
+  .logo {
+    width: 330px;
+    height: 160px;
+  }
+  header {
+    padding: 3em 0;
+  }
+  nav {
+    margin-bottom: 1.5em;
+  }
+  .banner-img {
+    height: 50vh;
+  }
+  .banner-txt {
+    margin-top: 1.3em;
+  }
+  nav ul li {
+    font-size: 1.8rem;
+  }
+  .margin-bottom {
+    margin-bottom: 3em;
+  }
+  header,
+  nav,
+  main,
+  section,
+  footer {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
 }
