@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font: normal 1.6rem/1.5 "Roboto", sans-serif;
+}
+
+/* Header */
+
+header {
+  background: coral;
+  color: #fff;
+  font-weight: 900;
+  padding: 1em 0;
+}
+
+.banner-logo,
+.banner-txt {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+.banner-logo {
+  border: 4px solid #fff;
+  border-radius: 30px;
+  margin-bottom: 0.5em;
+  padding: 0 0.5em;
+}
+
+.banner-txt {
+  margin-top: 0.5em;
+}
+
+.banner-img {
+  background-image: url(https://cdn-a.prisma.de/cdn/img/default/387/3867801_08fbd71bde48b8e1187179d6129dd4dc_480re0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 35vh;
+}
+
+nav {
+  background-color: rgb(231, 228, 228);
+}
+
+nav ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  list-style: none;
+}
+nav ul li {
+  /* display: inline-block; */
+  padding: 0.2em 0;
+  text-align: center;
+}
+
+/* Link states */
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover,
+a:active {
+  color: tomato;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 481px) {
+  nav ul {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 0 0.5em;
+  }
+}
